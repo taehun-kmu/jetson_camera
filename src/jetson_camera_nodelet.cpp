@@ -51,12 +51,12 @@ private:
 		image_transport::ImageTransport it(nh_);
 		image_transport::ImageTransport it_priv(nh_priv_);
 
-		cap_width_ = nh_priv_.param<int>("cap_width", 1280);
-		cap_height_ = nh_priv_.param<int>("cap_height", 720);
+		cap_width_ = nh_priv_.param<int>("cap_width", 280);
+		cap_height_ = nh_priv_.param<int>("cap_height", 210);
 
-		width_ = nh_priv_.param<int>("width", 640);
-		height_ = nh_priv_.param<int>("height", 480);
-		framerate_ = nh_priv_.param<int>("fps", 60);
+		width_ = nh_priv_.param<int>("width", 280);
+		height_ = nh_priv_.param<int>("height", 210);
+		framerate_ = nh_priv_.param<int>("fps", 30);
 
 		flip_method_ = nh_priv_.param<int>("flip_method", 0);
 
